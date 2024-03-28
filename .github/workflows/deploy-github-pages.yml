@@ -16,18 +16,18 @@ env:
   NG_USE_Q_AND_A_SEARCH: 'true'
   #
   # For demo-purpose only: A highly visible label to show instance name/version
-  ENV_NAME: ''
+  ENV_NAME: 'Test HIA Emie'
   #
   # ###########################################################################
   # TEXT CONTENT:
   # ###########################################################################
   #
   # A (short) name, visible in the top (navigation-)bar and in the browser's tab/window-title (and search-engine results)
-  TXT_APP_NAME: ''
+  TXT_APP_NAME: 'App Name Test HIA Emie'
   # An absolute/data-URL to an image, visible in the top (navigation-)bar
   TXT_APP_LOGO_URL: ''
   # The first heading, (only) visible on the main-page
-  TXT_MAIN_PAGE_HEADER: ''
+  TXT_MAIN_PAGE_HEADER: 'Main Page Header Test HIA Emie'
   # The (optional) introduction text, (only) visible on the main-page.
   # Can be multiple-lines of Markdown syntax or contain some HTML. Newlines need to be specified with `\n` or `<br />`.
   TXT_MAIN_PAGE_INTRO: >-
@@ -36,7 +36,7 @@ env:
   #
   # An (optional) notice on the bottom of the screen, can be overwritten by the sheet.
   # Will override the (optional) bottom-right "Contact"-buttons from the sheet.
-  TXT_MAIN_PAGE_NOTICE: ''
+  TXT_MAIN_PAGE_NOTICE: 'Page Notice Test HIA Emie'
   #
   # Contents of the 'error-page'
   #
@@ -104,7 +104,7 @@ jobs:
 
     steps:
       - name: Verify ENV configuration
-        if: env.REGIONS_SHEET_IDS == 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' || env.TXT_APP_NAME == ''
+        if: env.REGIONS_SHEET_IDS == '1rfruAGOWWFIP9sNpuPPfUtwJV87tv-2dL2bz2KPpXfA' || env.TXT_APP_NAME == 'TXT_APP_NAME_TEST_HIA_EMIE'
         run: 'echo "Please change the ENV configuration to real-world values." && exit 1'
 
       - name: Checkout
