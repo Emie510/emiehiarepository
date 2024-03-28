@@ -57,7 +57,7 @@ env:
   #
   # So in this example:
   #  <REGION>  =  <REGION__LABEL>     =  <REGION__SHEET_ID>
-  #  "test"    =  "Test/Development"  =  "10SIJdAQSd6loqCyzwK409QS_01Fgp8P4aqoDO8iBvhY"
+  #  "test"    =  "Test/Development"  =  "1rfruAGOWWFIP9sNpuPPfUtwJV87tv-2dL2bz2KPpXfA"
   #
   # The URL-part(s) to identify the region
   REGIONS: >-
@@ -104,7 +104,7 @@ jobs:
 
     steps:
       - name: Verify ENV configuration
-        if: env.REGIONS_SHEET_IDS == '1rfruAGOWWFIP9sNpuPPfUtwJV87tv-2dL2bz2KPpXfA' || env.TXT_APP_NAME == 'TXT_APP_NAME_TEST_HIA_EMIE'
+        if: env.REGIONS_SHEET_IDS == 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' || env.TXT_APP_NAME == ''
         run: 'echo "Please change the ENV configuration to real-world values." && exit 1'
 
       - name: Checkout
