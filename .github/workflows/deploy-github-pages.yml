@@ -56,7 +56,6 @@ env:
   # The last option in each list should NOT contain a comma (,) at the end.
   #
   # So in this example:
-  #  <REGION>  =  <REGION__LABEL>     =  <REGION__SHEET_ID>
   #  "test"    =  "Test/Development"  =  "1rfruAGOWWFIP9sNpuPPfUtwJV87tv-2dL2bz2KPpXfA"
   #
   # The URL-part(s) to identify the region
